@@ -8,3 +8,5 @@ With face recognition with opencv:
 -FisherFaces
 -Local Binary Pattern Histograms(LBPH)
 --> for windows: download: opencv-contrib-python
+
+reference: https://www.superdatascience.com/opencv-face-recognition/

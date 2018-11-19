@@ -1,1 +1,2 @@
 1 simple just have 108 pixel ?
+(%#03d)%count ---> what is # in here

@@ -16,8 +16,11 @@ def ImageShow(img):
         k=cv.waitKey()
 
 #import module face using haar
-def ImageDetect(img):
-    Module=input('link trained module: ')
+def ImageDetect(img,mode=0):
+    if mode==0:
+        Module=input('link trained module: ')
+    else:
+        Module=''
     if Module=='':
       Module='../../haarcascades/haarcascade_frontalface_default.xml'
     face_haar=cv.CascadeClassifier(Module)
@@ -26,12 +29,12 @@ def ImageDetect(img):
     print("local of point is: ",face)
     for(x,y,w,h) in face:
         cv.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
+    if not mode==0:
+        return face
 
 #run program
-def ImageDetected():
+def ImageRectangle():
     img=ImagePush()
     ImageDetect(img)
     ImageShow(img)
     return img
-
-ImageDetected()

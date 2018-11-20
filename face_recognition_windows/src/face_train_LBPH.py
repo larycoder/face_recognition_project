@@ -35,4 +35,3 @@ def LBPH_face_trained(train_folder=path):
     face_recognizer=cv2.face.LBPHFaceRecognizer_create()
     face_recognizer.train(faces,numpy.array(labels))
     return face_recognizer
-LBPH_face_trained()

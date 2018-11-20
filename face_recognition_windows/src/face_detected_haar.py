@@ -25,8 +25,8 @@ def ImageDetect(img,mode=0):
       Module='../../haarcascades/haarcascade_frontalface_default.xml'
     face_haar=cv.CascadeClassifier(Module)
     face=face_haar.detectMultiScale(img,1.1,5)
-    print("Number of face is: ",len(face))
-    print("local of point is: ",face)
+    #print("Number of face is: ",len(face))
+    #print("local of point is: ",face)
     for(x,y,w,h) in face:
         cv.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
     if not mode==0:

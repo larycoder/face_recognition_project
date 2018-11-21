@@ -17,6 +17,8 @@ image/training-data
 face_recognition_windows/src
 5. Open python file face_Predict.py
 6. Add name_person to 'labe_name' array
-7. Save and run face_Predict.py
+7. Rename video.mp4 in var 'path' with name of video want to use 
+8. Add video of person want to detect in folder:image
+9. Save and run face_Predict.py
 
 /* you should download and install all necessary lib in lib.txt */

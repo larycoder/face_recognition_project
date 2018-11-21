@@ -1,0 +1,10 @@
+Version app: v1
+
+what new in this version:
+- Detect human face
+- Recognize one human face 
+What bad on it:
+- Recognize only 1 person
+- Accurecy low
+- Delay high
+- Detecd bad

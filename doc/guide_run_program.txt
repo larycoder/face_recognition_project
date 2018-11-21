@@ -1,0 +1,22 @@
+for running program:
+1. You go in folder: 
+image/training-data
+2. Add folder contain face_image of persons that want to recognize
+3. Add your folder with syntax:
+'s'+'digital number'+'_'+'name of person'
+
+/*
+* Digital number must be in 0->9 and following order of file
+* Example:
+* s1_Hung exit --> then next folder must be: s2_'name_person'
+* next is: s3_'person_name'
+*
+*/
+
+4. Go in folder:
+face_recognition_windows/src
+5. Open python file face_Predict.py
+6. Add name_person to 'labe_name' array
+7. Save and run face_Predict.py
+
+/* you should download and install all necessary lib in lib.txt */

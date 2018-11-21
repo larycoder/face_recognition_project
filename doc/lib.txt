@@ -1,0 +1,17 @@
+Before running this code, you should have:
+
+1. Python 3.x
+2. Pip (python package management)
+3. Install necessary library:
+--> For Linux:
+- Opencv 3.x (3.4 is recommend)
+- python-numpy
+--> For window:
+- Opencv-python
+- Opencv-contrib-python
+
+/*
+* If you can not run code with your python on window 10
+* You can download and follow guild on folder: 'python37-32.txt'
+*
+*/

@@ -2,12 +2,9 @@ from face_train_LBPH import LBPH_face_trained
 from face_detected_haar import*
 import cv2
 
-path='../../image/KieuQuocViet.mp4'
+path='../../image/Hung.mp4'
 label_name=['unknow','Hung','Quoc Viet']
 
-def face_draw_text(img,matrix,text):
-    (x,y,w,h)=matrix[0]
-    cv2.putText(img,text,(x,y),cv2.FONT_HERSHEY_PLAIN,1.5,(0, 255, 0), 2)
 
 video=cv2.VideoCapture(path)
 k=cv2.waitKey(1)
@@ -20,6 +17,7 @@ while video.isOpened():
     count+=1
     if count>20:
         label_predict=LBPH_face_trained().predict(gray)
+        print(label_predict)
         count=0
     face_draw_text(frame,face_matrix,label_name[label_predict[0]])
     cv2.imshow('image',frame)

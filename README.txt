@@ -9,4 +9,6 @@ With face recognition with opencv:
 -Local Binary Pattern Histograms(LBPH)
 --> for windows: download: opencv-contrib-python
 
+More detail can find out in folder: 'doc'
+
 reference: https://www.superdatascience.com/opencv-face-recognition/

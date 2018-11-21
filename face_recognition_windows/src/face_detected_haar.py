@@ -26,8 +26,6 @@ def ImageDetect(img,mode=0):
     face=face_haar.detectMultiScale(img,1.1,5)
     #print("Number of face is: ",len(face))
     #print("local of point is: ",face)
-    for(x,y,w,h) in face:
-        cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
     if not mode==0:
         return face
 
@@ -36,3 +34,7 @@ def face_draw_text(img,matrix,text):
     (x,y,w,h)=matrix[0]
     cv2.putText(img,text,(x,y),cv2.FONT_HERSHEY_PLAIN,1.5,(0, 255, 0), 2)
 
+#add rectangle to image
+def face_draw_rectangle(img,face):
+    for(x,y,w,h) in face:
+         cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)

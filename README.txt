@@ -1,14 +1,12 @@
-for working with face recognition + opencv-python:
-please download:
-numpy
-opencv-python
+USTH project face recognition:
+--> Base: Opencv + python
 
-With face recognition with opencv:
+--> For face recognition with opencv:
 - EigenFaces
 -FisherFaces
 -Local Binary Pattern Histograms(LBPH)
---> for windows: download: opencv-contrib-python
 
 More detail can find out in folder: 'doc'
+Guid to run code in doc/guild_run_program
 
 reference: https://www.superdatascience.com/opencv-face-recognition/

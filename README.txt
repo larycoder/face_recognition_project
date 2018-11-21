@@ -8,5 +8,6 @@ USTH project face recognition:
 
 More detail can find out in folder: 'doc'
 Guid to run code in doc/guild_run_program
+Bugs deted in doc/intro
 
 reference: https://www.superdatascience.com/opencv-face-recognition/

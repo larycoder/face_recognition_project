@@ -2,7 +2,6 @@ import cv2
 import numpy
 import os
 
-
 path='../../image/training-data'
 
 #prepare data to train
@@ -23,8 +22,6 @@ def prepare_training_data(train_folder=path):
             faces.append(cv2.cvtColor(image,cv2.COLOR_BGR2GRAY))
             labels.append(label)
     return faces,labels
-
-
 
 #training data to LBPH face recognition
 def LBPH_face_trained(train_folder=path):

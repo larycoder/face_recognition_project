@@ -1,7 +1,7 @@
 from face_train_LBPH import LBPH_face_trained
 from face_detected_haar import*
 import cv2
-import thread
+import _thread
 
 # predefined
 path='../../image/Hung.mp4'
@@ -57,8 +57,8 @@ def face_tracking():
         # draw lable into image
 
 try:
-    thread.start_new_thread(face_tracking(),())     
+    _thread.start_new_thread(face_tracking(),())     
 except:
-    println("error unable to start thread")
+    print("error unable to start thread\n")
 video.release()
 cv2.destroyAllWindows()
